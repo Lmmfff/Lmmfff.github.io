@@ -16,7 +16,7 @@
     
   },
   "name":"",
-  "description":"\u003ch2 id=\u0022开始\u0022\u003e开始\u003c\/h2\u003e\n\u003cp\u003e学习搭建博客一拖再拖，在学校总是有些乱七八糟的各种事情，不能心安理得的浪费时间去解决一些奇奇怪怪的问题，好吧，说到底还是自己太垃圾了。话不多说，进入正题。\u003c\/p\u003e\n\u003ch2 id=\u00221-关于hugo\u0022\u003e1 关于Hugo\u003c\/h2\u003e\n\u003ch2 id=\u002211准备工作下载hugo\u0022\u003e1.1准备工作，下载Hugo\u003c\/h2\u003e\n\u003cp\u003e下载安装Hugo，用cmd输入hugo version检测是否安装成功\n成功安装后，建立一个空白文件夹，用来存放博客网站的文件例如D:\/Hugowebsite\u003c\/p\u003e\n\u003ch2 id=\u002212生成静态网站\u0022\u003e1.2生成静态网站\u003c\/h2\u003e\n\u003cp\u003e在D:\/Hugowebsite文件夹里打开cmd（tips：直接在资源管理器路径栏里面输入cmd），\u003c\/p\u003e\n\u003cpre\u003e\u003ccode\u003ehugo new site blog\r\n#blog是网站文件名\r\n\u003c\/code\u003e\u003c\/pre\u003e\n\u003cp\u003e此时，blog文件夹里面已经包含多个网站的文件。\u003c\/p\u003e\n\u003ch2 id=\u002213下载主题\u0022\u003e1.3下载主题\u003c\/h2\u003e\n\u003cp\u003e下载hugo主题,官网\u003ca href=\u0022http:\/\/themes.gohugo.io\u0022\u003ehttp:\/\/themes.gohugo.io\u003c\/a\u003e\n选择一个喜欢的主题，进入网站目录\u003c\/p\u003e\n\u003cpre\u003e\u003ccode\u003ecd blog\/themes\r\n#把主题文件夹下载到themes下\r\ngit clone https:\/\/github.com\/XXX\/XXX.git XXX #网址为主题的github仓库网址，后面为下载到的文件夹名\r\n\u003c\/code\u003e\u003c\/pre\u003e\n\u003cp\u003e然后，打开下载的文件夹里面的exampleSite，我的是D:\\Hugo\\Hugowebsite\\blog\\themes\\hugo-tranquilpeak-theme\\exampleSite\u003c\/p\u003e\n\u003cp\u003e将里面的全部文件复制到外面的blog文件夹里，替代原来的同名文件（夹）。（此处，全部替换可能将主题中的一些多余的博客也加到了自己的博客中，没关系，后面可以删除）。此处复制也可用cmd代码操作\u003c\/p\u003e\n\u003cp\u003e配置主题文件，可直接修改blog\/config.toml文件中的内容，例如主页的布局，用户名，介绍等等。注意一下几个地方\u003c\/p\u003e\n\u003cp\u003e1 修改主题名字，网站连接的github网址（后面托管要用）可用如下代码\u003c\/p\u003e\n\u003cpre\u003e\u003ccode\u003ehugo --theme=XXX --baseUrl=“https:\/\/XXX.github.io\/\u0026quot; --buildDrafts\r\n\u003c\/code\u003e\u003c\/pre\u003e\n\u003cp\u003e2 其他对主题中布局不满意或者需要删改增加的地方直接在config文件中改，主题的相关官网文件中有详细介绍代码的功能，注释中也有。\u003c\/p\u003e\n\u003ch2 id=\u002214新建博客\u0022\u003e1.4新建博客\u003c\/h2\u003e\n\u003cpre\u003e\u003ccode\u003ehugo new post\/firstblog.md #此时工作目录为blog。新建的firstblog文件在content目录下\r\n#启动hugo server，生成静态网站，打开最后的网址，可看到此时主题已经生效\r\nhugo server -D\r\n\u003c\/code\u003e\u003c\/pre\u003e\n\u003ch2 id=\u00222-github库\u0022\u003e2 github库\u003c\/h2\u003e\n\u003ch2 id=\u00223-hugo的静态网站托管到github\u0022\u003e3 Hugo的静态网站托管到github\u003c\/h2\u003e\n\u003ch2 id=\u00224-其他问题\u0022\u003e4 其他问题\u003c\/h2\u003e",
+  "description":"",
   "url":"https:\/\/lmmfff.github.io\/post\/firstpost\/",
   "keywords":"[Vscode插件 Hugo github pages]"
 }
@@ -28,150 +28,18 @@
 <meta name="generator" content="Hugo 0.82.0 with theme Tranquilpeak 0.5.3-BETA">
 <meta name="author" content="白墨">
 <meta name="keywords" content="Vscode插件 Hugo github pages">
-<meta name="description" content="开始
-学习搭建博客一拖再拖，在学校总是有些乱七八糟的各种事情，不能心安理得的浪费时间去解决一些奇奇怪怪的问题，好吧，说到底还是自己太垃圾了。话不多说，进入正题。
-1 关于Hugo
-1.1准备工作，下载Hugo
-下载安装Hugo，用cmd输入hugo version检测是否安装成功
-成功安装后，建立一个空白文件夹，用来存放博客网站的文件例如D:/Hugowebsite
-1.2生成静态网站
-在D:/Hugowebsite文件夹里打开cmd（tips：直接在资源管理器路径栏里面输入cmd），
-hugo new site blog
-#blog是网站文件名
-
-此时，blog文件夹里面已经包含多个网站的文件。
-1.3下载主题
-下载hugo主题,官网http://themes.gohugo.io
-选择一个喜欢的主题，进入网站目录
-cd blog/themes
-#把主题文件夹下载到themes下
-git clone https://github.com/XXX/XXX.git XXX #网址为主题的github仓库网址，后面为下载到的文件夹名
-
-然后，打开下载的文件夹里面的exampleSite，我的是D:\Hugo\Hugowebsite\blog\themes\hugo-tranquilpeak-theme\exampleSite
-将里面的全部文件复制到外面的blog文件夹里，替代原来的同名文件（夹）。（此处，全部替换可能将主题中的一些多余的博客也加到了自己的博客中，没关系，后面可以删除）。此处复制也可用cmd代码操作
-配置主题文件，可直接修改blog/config.toml文件中的内容，例如主页的布局，用户名，介绍等等。注意一下几个地方
-1 修改主题名字，网站连接的github网址（后面托管要用）可用如下代码
-hugo --theme=XXX --baseUrl=“https://XXX.github.io/&quot; --buildDrafts
-
-2 其他对主题中布局不满意或者需要删改增加的地方直接在config文件中改，主题的相关官网文件中有详细介绍代码的功能，注释中也有。
-1.4新建博客
-hugo new post/firstblog.md #此时工作目录为blog。新建的firstblog文件在content目录下
-#启动hugo server，生成静态网站，打开最后的网址，可看到此时主题已经生效
-hugo server -D
-
-2 github库
-3 Hugo的静态网站托管到github
-4 其他问题">
+<meta name="description" content="">
 
 
-<meta property="og:description" content="开始
-学习搭建博客一拖再拖，在学校总是有些乱七八糟的各种事情，不能心安理得的浪费时间去解决一些奇奇怪怪的问题，好吧，说到底还是自己太垃圾了。话不多说，进入正题。
-1 关于Hugo
-1.1准备工作，下载Hugo
-下载安装Hugo，用cmd输入hugo version检测是否安装成功
-成功安装后，建立一个空白文件夹，用来存放博客网站的文件例如D:/Hugowebsite
-1.2生成静态网站
-在D:/Hugowebsite文件夹里打开cmd（tips：直接在资源管理器路径栏里面输入cmd），
-hugo new site blog
-#blog是网站文件名
-
-此时，blog文件夹里面已经包含多个网站的文件。
-1.3下载主题
-下载hugo主题,官网http://themes.gohugo.io
-选择一个喜欢的主题，进入网站目录
-cd blog/themes
-#把主题文件夹下载到themes下
-git clone https://github.com/XXX/XXX.git XXX #网址为主题的github仓库网址，后面为下载到的文件夹名
-
-然后，打开下载的文件夹里面的exampleSite，我的是D:\Hugo\Hugowebsite\blog\themes\hugo-tranquilpeak-theme\exampleSite
-将里面的全部文件复制到外面的blog文件夹里，替代原来的同名文件（夹）。（此处，全部替换可能将主题中的一些多余的博客也加到了自己的博客中，没关系，后面可以删除）。此处复制也可用cmd代码操作
-配置主题文件，可直接修改blog/config.toml文件中的内容，例如主页的布局，用户名，介绍等等。注意一下几个地方
-1 修改主题名字，网站连接的github网址（后面托管要用）可用如下代码
-hugo --theme=XXX --baseUrl=“https://XXX.github.io/&quot; --buildDrafts
-
-2 其他对主题中布局不满意或者需要删改增加的地方直接在config文件中改，主题的相关官网文件中有详细介绍代码的功能，注释中也有。
-1.4新建博客
-hugo new post/firstblog.md #此时工作目录为blog。新建的firstblog文件在content目录下
-#启动hugo server，生成静态网站，打开最后的网址，可看到此时主题已经生效
-hugo server -D
-
-2 github库
-3 Hugo的静态网站托管到github
-4 其他问题">
+<meta property="og:description" content="">
 <meta property="og:type" content="article">
 <meta property="og:title" content="学习搭建博客历程">
 <meta name="twitter:title" content="学习搭建博客历程">
 <meta property="og:url" content="https://lmmfff.github.io/post/firstpost/">
 <meta property="twitter:url" content="https://lmmfff.github.io/post/firstpost/">
 <meta property="og:site_name" content="">
-<meta property="og:description" content="开始
-学习搭建博客一拖再拖，在学校总是有些乱七八糟的各种事情，不能心安理得的浪费时间去解决一些奇奇怪怪的问题，好吧，说到底还是自己太垃圾了。话不多说，进入正题。
-1 关于Hugo
-1.1准备工作，下载Hugo
-下载安装Hugo，用cmd输入hugo version检测是否安装成功
-成功安装后，建立一个空白文件夹，用来存放博客网站的文件例如D:/Hugowebsite
-1.2生成静态网站
-在D:/Hugowebsite文件夹里打开cmd（tips：直接在资源管理器路径栏里面输入cmd），
-hugo new site blog
-#blog是网站文件名
-
-此时，blog文件夹里面已经包含多个网站的文件。
-1.3下载主题
-下载hugo主题,官网http://themes.gohugo.io
-选择一个喜欢的主题，进入网站目录
-cd blog/themes
-#把主题文件夹下载到themes下
-git clone https://github.com/XXX/XXX.git XXX #网址为主题的github仓库网址，后面为下载到的文件夹名
-
-然后，打开下载的文件夹里面的exampleSite，我的是D:\Hugo\Hugowebsite\blog\themes\hugo-tranquilpeak-theme\exampleSite
-将里面的全部文件复制到外面的blog文件夹里，替代原来的同名文件（夹）。（此处，全部替换可能将主题中的一些多余的博客也加到了自己的博客中，没关系，后面可以删除）。此处复制也可用cmd代码操作
-配置主题文件，可直接修改blog/config.toml文件中的内容，例如主页的布局，用户名，介绍等等。注意一下几个地方
-1 修改主题名字，网站连接的github网址（后面托管要用）可用如下代码
-hugo --theme=XXX --baseUrl=“https://XXX.github.io/&quot; --buildDrafts
-
-2 其他对主题中布局不满意或者需要删改增加的地方直接在config文件中改，主题的相关官网文件中有详细介绍代码的功能，注释中也有。
-1.4新建博客
-hugo new post/firstblog.md #此时工作目录为blog。新建的firstblog文件在content目录下
-#启动hugo server，生成静态网站，打开最后的网址，可看到此时主题已经生效
-hugo server -D
-
-2 github库
-3 Hugo的静态网站托管到github
-4 其他问题">
-<meta name="twitter:description" content="开始
-学习搭建博客一拖再拖，在学校总是有些乱七八糟的各种事情，不能心安理得的浪费时间去解决一些奇奇怪怪的问题，好吧，说到底还是自己太垃圾了。话不多说，进入正题。
-1 关于Hugo
-1.1准备工作，下载Hugo
-下载安装Hugo，用cmd输入hugo version检测是否安装成功
-成功安装后，建立一个空白文件夹，用来存放博客网站的文件例如D:/Hugowebsite
-1.2生成静态网站
-在D:/Hugowebsite文件夹里打开cmd（tips：直接在资源管理器路径栏里面输入cmd），
-hugo new site blog
-#blog是网站文件名
-
-此时，blog文件夹里面已经包含多个网站的文件。
-1.3下载主题
-下载hugo主题,官网http://themes.gohugo.io
-选择一个喜欢的主题，进入网站目录
-cd blog/themes
-#把主题文件夹下载到themes下
-git clone https://github.com/XXX/XXX.git XXX #网址为主题的github仓库网址，后面为下载到的文件夹名
-
-然后，打开下载的文件夹里面的exampleSite，我的是D:\Hugo\Hugowebsite\blog\themes\hugo-tranquilpeak-theme\exampleSite
-将里面的全部文件复制到外面的blog文件夹里，替代原来的同名文件（夹）。（此处，全部替换可能将主题中的一些多余的博客也加到了自己的博客中，没关系，后面可以删除）。此处复制也可用cmd代码操作
-配置主题文件，可直接修改blog/config.toml文件中的内容，例如主页的布局，用户名，介绍等等。注意一下几个地方
-1 修改主题名字，网站连接的github网址（后面托管要用）可用如下代码
-hugo --theme=XXX --baseUrl=“https://XXX.github.io/&quot; --buildDrafts
-
-2 其他对主题中布局不满意或者需要删改增加的地方直接在config文件中改，主题的相关官网文件中有详细介绍代码的功能，注释中也有。
-1.4新建博客
-hugo new post/firstblog.md #此时工作目录为blog。新建的firstblog文件在content目录下
-#启动hugo server，生成静态网站，打开最后的网址，可看到此时主题已经生效
-hugo server -D
-
-2 github库
-3 Hugo的静态网站托管到github
-4 其他问题">
+<meta property="og:description" content="">
+<meta name="twitter:description" content="">
 <meta property="og:locale" content="en-us">
 
   
@@ -433,6 +301,21 @@ hugo server -D
 <h2 id="2-github库">2 github库</h2>
 <h2 id="3-hugo的静态网站托管到github">3 Hugo的静态网站托管到github</h2>
 <h2 id="4-其他问题">4 其他问题</h2>
+<h3 id="20221217">2022.12.17</h3>
+<p>git push推送代码失败，刚开始是报错</p>
+<pre><code>fatal：unable to access ‘xxx’：OpenSSL SSL_connect:SSL_ERROR_SYSCALL in collect to XXX
+</code></pre>
+<p>原因：开了代理</p>
+<p>关闭代理之后再git push还是有错误</p>
+<pre><code>connection refused
+</code></pre>
+<p>改正</p>
+<pre><code>git remote add origin httpsXXX#刚开始推送到远程仓库用的网址是https
+git remote add ori SSH #加这行代码，用SSH
+#此时打印，输入下面代码，可以看到之前推送用的网址
+git remote -v
+</code></pre>
+<!-- raw HTML omitted -->
               
 
 
@@ -461,7 +344,7 @@ hugo server -D
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://lmmfff.github.io/post/second/" data-tooltip="Second" aria-label="NEXT: Second">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://lmmfff.github.io/post/second/" data-tooltip="111" aria-label="NEXT: 111">
           
               <i class="fa fa-angle-left"></i>
               <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -568,7 +451,7 @@ hugo server -D
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="https://lmmfff.github.io/post/second/" data-tooltip="Second" aria-label="NEXT: Second">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://lmmfff.github.io/post/second/" data-tooltip="111" aria-label="NEXT: 111">
           
               <i class="fa fa-angle-left"></i>
               <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
