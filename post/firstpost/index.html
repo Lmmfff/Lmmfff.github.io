@@ -7,7 +7,7 @@
 {  
   "@context":"http://schema.org",
   "@type":"Website",
-  "@id":"http:\/\/Lmmfff.github.io\/",
+  "@id":"https:\/\/lmmfff.github.io\/",
   "author": {
     "@type": "Person",
     "name": "白墨",
@@ -16,9 +16,9 @@
     
   },
   "name":"",
-  "description":"",
-  "url":"http:\/\/Lmmfff.github.io\/post\/firstpost\/",
-  "keywords":"[tech]"
+  "description":"\u003ch2 id=\u0022开始\u0022\u003e开始\u003c\/h2\u003e\n\u003cp\u003e学习搭建博客一拖再拖，在学校总是有些乱七八糟的各种事情，不能心安理得的浪费时间去解决一些奇奇怪怪的问题，好吧，说到底还是自己太垃圾了。话不多说，进入正题。\u003c\/p\u003e\n\u003ch2 id=\u00221-关于hugo\u0022\u003e1 关于Hugo\u003c\/h2\u003e\n\u003ch2 id=\u002211准备工作下载hugo\u0022\u003e1.1准备工作，下载Hugo\u003c\/h2\u003e\n\u003cp\u003e下载安装Hugo，用cmd输入hugo version检测是否安装成功\n成功安装后，建立一个空白文件夹，用来存放博客网站的文件例如D:\/Hugowebsite\u003c\/p\u003e\n\u003ch2 id=\u002212生成静态网站\u0022\u003e1.2生成静态网站\u003c\/h2\u003e\n\u003cp\u003e在D:\/Hugowebsite文件夹里打开cmd（tips：直接在资源管理器路径栏里面输入cmd），\u003c\/p\u003e\n\u003cpre\u003e\u003ccode\u003ehugo new site blog\r\n#blog是网站文件名\r\n\u003c\/code\u003e\u003c\/pre\u003e\n\u003cp\u003e此时，blog文件夹里面已经包含多个网站的文件。\u003c\/p\u003e\n\u003ch2 id=\u002213下载主题\u0022\u003e1.3下载主题\u003c\/h2\u003e\n\u003cp\u003e下载hugo主题,官网\u003ca href=\u0022http:\/\/themes.gohugo.io\u0022\u003ehttp:\/\/themes.gohugo.io\u003c\/a\u003e\n选择一个喜欢的主题，进入网站目录\u003c\/p\u003e\n\u003cpre\u003e\u003ccode\u003ecd blog\/themes\r\n#把主题文件夹下载到themes下\r\ngit clone https:\/\/github.com\/XXX\/XXX.git XXX #网址为主题的github仓库网址，后面为下载到的文件夹名\r\n\u003c\/code\u003e\u003c\/pre\u003e\n\u003cp\u003e然后，打开下载的文件夹里面的exampleSite，我的是D:\\Hugo\\Hugowebsite\\blog\\themes\\hugo-tranquilpeak-theme\\exampleSite\u003c\/p\u003e\n\u003cp\u003e将里面的全部文件复制到外面的blog文件夹里，替代原来的同名文件（夹）。（此处，全部替换可能将主题中的一些多余的博客也加到了自己的博客中，没关系，后面可以删除）。此处复制也可用cmd代码操作\u003c\/p\u003e\n\u003cp\u003e配置主题文件，可直接修改blog\/config.toml文件中的内容，例如主页的布局，用户名，介绍等等。注意一下几个地方\u003c\/p\u003e\n\u003cp\u003e1 修改主题名字，网站连接的github网址（后面托管要用）可用如下代码\u003c\/p\u003e\n\u003cpre\u003e\u003ccode\u003ehugo --theme=XXX --baseUrl=“https:\/\/XXX.github.io\/\u0026quot; --buildDrafts\r\n\u003c\/code\u003e\u003c\/pre\u003e\n\u003cp\u003e2 其他对主题中布局不满意或者需要删改增加的地方直接在config文件中改，主题的相关官网文件中有详细介绍代码的功能，注释中也有。\u003c\/p\u003e\n\u003ch2 id=\u002214新建博客\u0022\u003e1.4新建博客\u003c\/h2\u003e\n\u003cpre\u003e\u003ccode\u003ehugo new post\/firstblog.md #此时工作目录为blog。新建的firstblog文件在content目录下\r\n#启动hugo server，生成静态网站，打开最后的网址，可看到此时主题已经生效\r\nhugo server -D\r\n\u003c\/code\u003e\u003c\/pre\u003e\n\u003ch2 id=\u00222-github库\u0022\u003e2 github库\u003c\/h2\u003e\n\u003ch2 id=\u00223-hugo的静态网站托管到github\u0022\u003e3 Hugo的静态网站托管到github\u003c\/h2\u003e\n\u003ch2 id=\u00224-其他问题\u0022\u003e4 其他问题\u003c\/h2\u003e",
+  "url":"https:\/\/lmmfff.github.io\/post\/firstpost\/",
+  "keywords":"[Vscode插件 Hugo github pages]"
 }
 
 </script>
@@ -27,19 +27,151 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="generator" content="Hugo 0.82.0 with theme Tranquilpeak 0.5.3-BETA">
 <meta name="author" content="白墨">
-<meta name="keywords" content="tech">
-<meta name="description" content="">
+<meta name="keywords" content="Vscode插件 Hugo github pages">
+<meta name="description" content="开始
+学习搭建博客一拖再拖，在学校总是有些乱七八糟的各种事情，不能心安理得的浪费时间去解决一些奇奇怪怪的问题，好吧，说到底还是自己太垃圾了。话不多说，进入正题。
+1 关于Hugo
+1.1准备工作，下载Hugo
+下载安装Hugo，用cmd输入hugo version检测是否安装成功
+成功安装后，建立一个空白文件夹，用来存放博客网站的文件例如D:/Hugowebsite
+1.2生成静态网站
+在D:/Hugowebsite文件夹里打开cmd（tips：直接在资源管理器路径栏里面输入cmd），
+hugo new site blog
+#blog是网站文件名
+
+此时，blog文件夹里面已经包含多个网站的文件。
+1.3下载主题
+下载hugo主题,官网http://themes.gohugo.io
+选择一个喜欢的主题，进入网站目录
+cd blog/themes
+#把主题文件夹下载到themes下
+git clone https://github.com/XXX/XXX.git XXX #网址为主题的github仓库网址，后面为下载到的文件夹名
+
+然后，打开下载的文件夹里面的exampleSite，我的是D:\Hugo\Hugowebsite\blog\themes\hugo-tranquilpeak-theme\exampleSite
+将里面的全部文件复制到外面的blog文件夹里，替代原来的同名文件（夹）。（此处，全部替换可能将主题中的一些多余的博客也加到了自己的博客中，没关系，后面可以删除）。此处复制也可用cmd代码操作
+配置主题文件，可直接修改blog/config.toml文件中的内容，例如主页的布局，用户名，介绍等等。注意一下几个地方
+1 修改主题名字，网站连接的github网址（后面托管要用）可用如下代码
+hugo --theme=XXX --baseUrl=“https://XXX.github.io/&quot; --buildDrafts
+
+2 其他对主题中布局不满意或者需要删改增加的地方直接在config文件中改，主题的相关官网文件中有详细介绍代码的功能，注释中也有。
+1.4新建博客
+hugo new post/firstblog.md #此时工作目录为blog。新建的firstblog文件在content目录下
+#启动hugo server，生成静态网站，打开最后的网址，可看到此时主题已经生效
+hugo server -D
+
+2 github库
+3 Hugo的静态网站托管到github
+4 其他问题">
 
 
-<meta property="og:description" content="">
+<meta property="og:description" content="开始
+学习搭建博客一拖再拖，在学校总是有些乱七八糟的各种事情，不能心安理得的浪费时间去解决一些奇奇怪怪的问题，好吧，说到底还是自己太垃圾了。话不多说，进入正题。
+1 关于Hugo
+1.1准备工作，下载Hugo
+下载安装Hugo，用cmd输入hugo version检测是否安装成功
+成功安装后，建立一个空白文件夹，用来存放博客网站的文件例如D:/Hugowebsite
+1.2生成静态网站
+在D:/Hugowebsite文件夹里打开cmd（tips：直接在资源管理器路径栏里面输入cmd），
+hugo new site blog
+#blog是网站文件名
+
+此时，blog文件夹里面已经包含多个网站的文件。
+1.3下载主题
+下载hugo主题,官网http://themes.gohugo.io
+选择一个喜欢的主题，进入网站目录
+cd blog/themes
+#把主题文件夹下载到themes下
+git clone https://github.com/XXX/XXX.git XXX #网址为主题的github仓库网址，后面为下载到的文件夹名
+
+然后，打开下载的文件夹里面的exampleSite，我的是D:\Hugo\Hugowebsite\blog\themes\hugo-tranquilpeak-theme\exampleSite
+将里面的全部文件复制到外面的blog文件夹里，替代原来的同名文件（夹）。（此处，全部替换可能将主题中的一些多余的博客也加到了自己的博客中，没关系，后面可以删除）。此处复制也可用cmd代码操作
+配置主题文件，可直接修改blog/config.toml文件中的内容，例如主页的布局，用户名，介绍等等。注意一下几个地方
+1 修改主题名字，网站连接的github网址（后面托管要用）可用如下代码
+hugo --theme=XXX --baseUrl=“https://XXX.github.io/&quot; --buildDrafts
+
+2 其他对主题中布局不满意或者需要删改增加的地方直接在config文件中改，主题的相关官网文件中有详细介绍代码的功能，注释中也有。
+1.4新建博客
+hugo new post/firstblog.md #此时工作目录为blog。新建的firstblog文件在content目录下
+#启动hugo server，生成静态网站，打开最后的网址，可看到此时主题已经生效
+hugo server -D
+
+2 github库
+3 Hugo的静态网站托管到github
+4 其他问题">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Firstpost">
-<meta name="twitter:title" content="Firstpost">
-<meta property="og:url" content="http://Lmmfff.github.io/post/firstpost/">
-<meta property="twitter:url" content="http://Lmmfff.github.io/post/firstpost/">
+<meta property="og:title" content="学习搭建博客历程">
+<meta name="twitter:title" content="学习搭建博客历程">
+<meta property="og:url" content="https://lmmfff.github.io/post/firstpost/">
+<meta property="twitter:url" content="https://lmmfff.github.io/post/firstpost/">
 <meta property="og:site_name" content="">
-<meta property="og:description" content="">
-<meta name="twitter:description" content="">
+<meta property="og:description" content="开始
+学习搭建博客一拖再拖，在学校总是有些乱七八糟的各种事情，不能心安理得的浪费时间去解决一些奇奇怪怪的问题，好吧，说到底还是自己太垃圾了。话不多说，进入正题。
+1 关于Hugo
+1.1准备工作，下载Hugo
+下载安装Hugo，用cmd输入hugo version检测是否安装成功
+成功安装后，建立一个空白文件夹，用来存放博客网站的文件例如D:/Hugowebsite
+1.2生成静态网站
+在D:/Hugowebsite文件夹里打开cmd（tips：直接在资源管理器路径栏里面输入cmd），
+hugo new site blog
+#blog是网站文件名
+
+此时，blog文件夹里面已经包含多个网站的文件。
+1.3下载主题
+下载hugo主题,官网http://themes.gohugo.io
+选择一个喜欢的主题，进入网站目录
+cd blog/themes
+#把主题文件夹下载到themes下
+git clone https://github.com/XXX/XXX.git XXX #网址为主题的github仓库网址，后面为下载到的文件夹名
+
+然后，打开下载的文件夹里面的exampleSite，我的是D:\Hugo\Hugowebsite\blog\themes\hugo-tranquilpeak-theme\exampleSite
+将里面的全部文件复制到外面的blog文件夹里，替代原来的同名文件（夹）。（此处，全部替换可能将主题中的一些多余的博客也加到了自己的博客中，没关系，后面可以删除）。此处复制也可用cmd代码操作
+配置主题文件，可直接修改blog/config.toml文件中的内容，例如主页的布局，用户名，介绍等等。注意一下几个地方
+1 修改主题名字，网站连接的github网址（后面托管要用）可用如下代码
+hugo --theme=XXX --baseUrl=“https://XXX.github.io/&quot; --buildDrafts
+
+2 其他对主题中布局不满意或者需要删改增加的地方直接在config文件中改，主题的相关官网文件中有详细介绍代码的功能，注释中也有。
+1.4新建博客
+hugo new post/firstblog.md #此时工作目录为blog。新建的firstblog文件在content目录下
+#启动hugo server，生成静态网站，打开最后的网址，可看到此时主题已经生效
+hugo server -D
+
+2 github库
+3 Hugo的静态网站托管到github
+4 其他问题">
+<meta name="twitter:description" content="开始
+学习搭建博客一拖再拖，在学校总是有些乱七八糟的各种事情，不能心安理得的浪费时间去解决一些奇奇怪怪的问题，好吧，说到底还是自己太垃圾了。话不多说，进入正题。
+1 关于Hugo
+1.1准备工作，下载Hugo
+下载安装Hugo，用cmd输入hugo version检测是否安装成功
+成功安装后，建立一个空白文件夹，用来存放博客网站的文件例如D:/Hugowebsite
+1.2生成静态网站
+在D:/Hugowebsite文件夹里打开cmd（tips：直接在资源管理器路径栏里面输入cmd），
+hugo new site blog
+#blog是网站文件名
+
+此时，blog文件夹里面已经包含多个网站的文件。
+1.3下载主题
+下载hugo主题,官网http://themes.gohugo.io
+选择一个喜欢的主题，进入网站目录
+cd blog/themes
+#把主题文件夹下载到themes下
+git clone https://github.com/XXX/XXX.git XXX #网址为主题的github仓库网址，后面为下载到的文件夹名
+
+然后，打开下载的文件夹里面的exampleSite，我的是D:\Hugo\Hugowebsite\blog\themes\hugo-tranquilpeak-theme\exampleSite
+将里面的全部文件复制到外面的blog文件夹里，替代原来的同名文件（夹）。（此处，全部替换可能将主题中的一些多余的博客也加到了自己的博客中，没关系，后面可以删除）。此处复制也可用cmd代码操作
+配置主题文件，可直接修改blog/config.toml文件中的内容，例如主页的布局，用户名，介绍等等。注意一下几个地方
+1 修改主题名字，网站连接的github网址（后面托管要用）可用如下代码
+hugo --theme=XXX --baseUrl=“https://XXX.github.io/&quot; --buildDrafts
+
+2 其他对主题中布局不满意或者需要删改增加的地方直接在config文件中改，主题的相关官网文件中有详细介绍代码的功能，注释中也有。
+1.4新建博客
+hugo new post/firstblog.md #此时工作目录为blog。新建的firstblog文件在content目录下
+#启动hugo server，生成静态网站，打开最后的网址，可看到此时主题已经生效
+hugo server -D
+
+2 github库
+3 Hugo的静态网站托管到github
+4 其他问题">
 <meta property="og:locale" content="en-us">
 
   
@@ -81,14 +213,14 @@
 
 
 
-    <title>Firstpost</title>
+    <title>学习搭建博客历程</title>
 
-    <link rel="icon" href="http://Lmmfff.github.io/favicon.png">
+    <link rel="icon" href="https://lmmfff.github.io/favicon.png">
     
 
     
 
-    <link rel="canonical" href="http://Lmmfff.github.io/post/firstpost/">
+    <link rel="canonical" href="https://lmmfff.github.io/post/firstpost/">
 
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -96,7 +228,7 @@
     
     
     
-    <link rel="stylesheet" href="http://Lmmfff.github.io/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
+    <link rel="stylesheet" href="https://lmmfff.github.io/css/style-h6ccsoet3mzkbb0wngshlfbaweimexgqcxj0h5hu4h82olsdzz6wmqdkajm.min.css" />
     
     
 
@@ -111,12 +243,12 @@
       <header id="header" data-behavior="4">
   <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
   <div class="header-title">
-    <a class="header-title-link" href="http://Lmmfff.github.io/" aria-label="Go to homepage"></a>
+    <a class="header-title-link" href="https://lmmfff.github.io/" aria-label="Go to homepage"></a>
   </div>
   
     
       <a class="header-right-picture "
-         href="http://Lmmfff.github.io/#about" aria-label="Open the link: /#about">
+         href="https://lmmfff.github.io/#about" aria-label="Open the link: /#about">
     
     
     
@@ -132,7 +264,7 @@
   <div class="sidebar-container">
     
       <div class="sidebar-profile">
-        <a href="http://Lmmfff.github.io/#about" aria-label="Read more about the author">
+        <a href="https://lmmfff.github.io/#about" aria-label="Read more about the author">
           <img class="sidebar-profile-picture" src="https://www.gravatar.com/avatar/d09dc2d7aa5c467519e8af89f7b3d94c?s=110" alt="Author&#39;s picture" />
         </a>
         <h4 class="sidebar-profile-name">白墨</h4>
@@ -145,7 +277,7 @@
       
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="http://Lmmfff.github.io/" title="Home">
+      <a class="sidebar-button-link " href="https://lmmfff.github.io/" title="Home">
     
       <i class="sidebar-button-icon fas fa-lg fa-home" aria-hidden="true"></i>
       
@@ -155,7 +287,7 @@
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="http://Lmmfff.github.io/categories" title="Categories">
+      <a class="sidebar-button-link " href="https://lmmfff.github.io/categories" title="Categories">
     
       <i class="sidebar-button-icon fas fa-lg fa-bookmark" aria-hidden="true"></i>
       
@@ -165,7 +297,7 @@
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="http://Lmmfff.github.io/tags" title="Tags">
+      <a class="sidebar-button-link " href="https://lmmfff.github.io/tags" title="Tags">
     
       <i class="sidebar-button-icon fas fa-lg fa-tags" aria-hidden="true"></i>
       
@@ -175,7 +307,7 @@
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="http://Lmmfff.github.io/archives" title="Archives">
+      <a class="sidebar-button-link " href="https://lmmfff.github.io/archives" title="Archives">
     
       <i class="sidebar-button-icon fas fa-lg fa-archive" aria-hidden="true"></i>
       
@@ -185,7 +317,7 @@
 
   <li class="sidebar-button">
     
-      <a class="sidebar-button-link " href="http://Lmmfff.github.io/#about" title="About">
+      <a class="sidebar-button-link " href="https://lmmfff.github.io/#about" title="About">
     
       <i class="sidebar-button-icon fas fa-lg fa-question" aria-hidden="true"></i>
       
@@ -238,7 +370,7 @@
             <div class="post-header main-content-wrap text-left">
   
     <h1 class="post-title">
-      Firstpost
+      学习搭建博客历程
     </h1>
   
   
@@ -255,9 +387,9 @@
   
     <span>in</span>
     
-      <a class="category-link" href="http://Lmmfff.github.io/categories/category">category</a>, 
+      <a class="category-link" href="https://lmmfff.github.io/categories/category">category</a>, 
     
-      <a class="category-link" href="http://Lmmfff.github.io/categories/subcategory">subcategory</a>
+      <a class="category-link" href="https://lmmfff.github.io/categories/subcategory">subcategory</a>
     
   
 
@@ -267,7 +399,40 @@
           
           <div class="post-content markdown">
             <div class="main-content-wrap">
-              
+              <h2 id="开始">开始</h2>
+<p>学习搭建博客一拖再拖，在学校总是有些乱七八糟的各种事情，不能心安理得的浪费时间去解决一些奇奇怪怪的问题，好吧，说到底还是自己太垃圾了。话不多说，进入正题。</p>
+<h2 id="1-关于hugo">1 关于Hugo</h2>
+<h2 id="11准备工作下载hugo">1.1准备工作，下载Hugo</h2>
+<p>下载安装Hugo，用cmd输入hugo version检测是否安装成功
+成功安装后，建立一个空白文件夹，用来存放博客网站的文件例如D:/Hugowebsite</p>
+<h2 id="12生成静态网站">1.2生成静态网站</h2>
+<p>在D:/Hugowebsite文件夹里打开cmd（tips：直接在资源管理器路径栏里面输入cmd），</p>
+<pre><code>hugo new site blog
+#blog是网站文件名
+</code></pre>
+<p>此时，blog文件夹里面已经包含多个网站的文件。</p>
+<h2 id="13下载主题">1.3下载主题</h2>
+<p>下载hugo主题,官网<a href="http://themes.gohugo.io">http://themes.gohugo.io</a>
+选择一个喜欢的主题，进入网站目录</p>
+<pre><code>cd blog/themes
+#把主题文件夹下载到themes下
+git clone https://github.com/XXX/XXX.git XXX #网址为主题的github仓库网址，后面为下载到的文件夹名
+</code></pre>
+<p>然后，打开下载的文件夹里面的exampleSite，我的是D:\Hugo\Hugowebsite\blog\themes\hugo-tranquilpeak-theme\exampleSite</p>
+<p>将里面的全部文件复制到外面的blog文件夹里，替代原来的同名文件（夹）。（此处，全部替换可能将主题中的一些多余的博客也加到了自己的博客中，没关系，后面可以删除）。此处复制也可用cmd代码操作</p>
+<p>配置主题文件，可直接修改blog/config.toml文件中的内容，例如主页的布局，用户名，介绍等等。注意一下几个地方</p>
+<p>1 修改主题名字，网站连接的github网址（后面托管要用）可用如下代码</p>
+<pre><code>hugo --theme=XXX --baseUrl=“https://XXX.github.io/&quot; --buildDrafts
+</code></pre>
+<p>2 其他对主题中布局不满意或者需要删改增加的地方直接在config文件中改，主题的相关官网文件中有详细介绍代码的功能，注释中也有。</p>
+<h2 id="14新建博客">1.4新建博客</h2>
+<pre><code>hugo new post/firstblog.md #此时工作目录为blog。新建的firstblog文件在content目录下
+#启动hugo server，生成静态网站，打开最后的网址，可看到此时主题已经生效
+hugo server -D
+</code></pre>
+<h2 id="2-github库">2 github库</h2>
+<h2 id="3-hugo的静态网站托管到github">3 Hugo的静态网站托管到github</h2>
+<h2 id="4-其他问题">4 其他问题</h2>
               
 
 
@@ -281,9 +446,9 @@
                   <div class="post-footer-tags">
                     <span class="text-color-light text-small">TAGGED IN</span><br/>
                     
-  <a class="tag tag--primary tag--small" href="http://Lmmfff.github.io/tags/tag1/">tag1</a>
+  <a class="tag tag--primary tag--small" href="https://lmmfff.github.io/tags/tag1/">tag1</a>
 
-  <a class="tag tag--primary tag--small" href="http://Lmmfff.github.io/tags/tag2/">tag2</a>
+  <a class="tag tag--primary tag--small" href="https://lmmfff.github.io/tags/tag2/">tag2</a>
 
                   </div>
                 
@@ -296,7 +461,7 @@
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="http://Lmmfff.github.io/post/second/" data-tooltip="Second" aria-label="NEXT: Second">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://lmmfff.github.io/post/second/" data-tooltip="Second" aria-label="NEXT: Second">
           
               <i class="fa fa-angle-left"></i>
               <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -322,19 +487,19 @@
     </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://Lmmfff.github.io/post/firstpost/" title="Share on Facebook" aria-label="Share on Facebook">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://lmmfff.github.io/post/firstpost/" title="Share on Facebook" aria-label="Share on Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i>
         </a>
       </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://Lmmfff.github.io/post/firstpost/" title="Share on Twitter" aria-label="Share on Twitter">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://lmmfff.github.io/post/firstpost/" title="Share on Twitter" aria-label="Share on Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i>
         </a>
       </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=http://Lmmfff.github.io/post/firstpost/" title="Share on Linkedin" aria-label="Share on Linkedin">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://lmmfff.github.io/post/firstpost/" title="Share on Linkedin" aria-label="Share on Linkedin">
           <i class="fab fa-linkedin" aria-hidden="true"></i>
         </a>
       </li>
@@ -365,7 +530,7 @@
     </div>
     <script type="text/javascript">
       var disqus_config = function() {
-        this.page.url = 'http:\/\/Lmmfff.github.io\/post\/firstpost\/';
+        this.page.url = 'https:\/\/lmmfff.github.io\/post\/firstpost\/';
         
           this.page.identifier = '\/post\/firstpost\/'
         
@@ -403,7 +568,7 @@
       
         <li class="post-action">
           
-            <a class="post-action-btn btn btn--default tooltip--top" href="http://Lmmfff.github.io/post/second/" data-tooltip="Second" aria-label="NEXT: Second">
+            <a class="post-action-btn btn btn--default tooltip--top" href="https://lmmfff.github.io/post/second/" data-tooltip="Second" aria-label="NEXT: Second">
           
               <i class="fa fa-angle-left"></i>
               <span class="hide-xs hide-sm text-small icon-ml">NEXT</span>
@@ -429,19 +594,19 @@
     </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http://Lmmfff.github.io/post/firstpost/" title="Share on Facebook" aria-label="Share on Facebook">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https://lmmfff.github.io/post/firstpost/" title="Share on Facebook" aria-label="Share on Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i>
         </a>
       </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=http://Lmmfff.github.io/post/firstpost/" title="Share on Twitter" aria-label="Share on Twitter">
+        <a class="post-action-btn btn btn--default" target="new" href="https://twitter.com/intent/tweet?text=https://lmmfff.github.io/post/firstpost/" title="Share on Twitter" aria-label="Share on Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i>
         </a>
       </li>
     
       <li class="post-action hide-xs">
-        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=http://Lmmfff.github.io/post/firstpost/" title="Share on Linkedin" aria-label="Share on Linkedin">
+        <a class="post-action-btn btn btn--default" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https://lmmfff.github.io/post/firstpost/" title="Share on Linkedin" aria-label="Share on Linkedin">
           <i class="fab fa-linkedin" aria-hidden="true"></i>
         </a>
       </li>
@@ -472,19 +637,19 @@
   <ul class="share-options">
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2FLmmfff.github.io%2Fpost%2Ffirstpost%2F" aria-label="Share on Facebook">
+        <a class="share-option-btn" target="new" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Flmmfff.github.io%2Fpost%2Ffirstpost%2F" aria-label="Share on Facebook">
           <i class="fab fa-facebook-square" aria-hidden="true"></i><span>Share on Facebook</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=http%3A%2F%2FLmmfff.github.io%2Fpost%2Ffirstpost%2F" aria-label="Share on Twitter">
+        <a class="share-option-btn" target="new" href="https://twitter.com/intent/tweet?text=https%3A%2F%2Flmmfff.github.io%2Fpost%2Ffirstpost%2F" aria-label="Share on Twitter">
           <i class="fab fa-twitter" aria-hidden="true"></i><span>Share on Twitter</span>
         </a>
       </li>
     
       <li class="share-option">
-        <a class="share-option-btn" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=http%3A%2F%2FLmmfff.github.io%2Fpost%2Ffirstpost%2F" aria-label="Share on Linkedin">
+        <a class="share-option-btn" target="new" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Flmmfff.github.io%2Fpost%2Ffirstpost%2F" aria-label="Share on Linkedin">
           <i class="fab fa-linkedin" aria-hidden="true"></i><span>Share on Linkedin</span>
         </a>
       </li>
@@ -530,7 +695,7 @@
     
   
     
-      <div id="cover" style="background-image:url('http://Lmmfff.github.io/images/cover.jpg');"></div>
+      <div id="cover" style="background-image:url('https://lmmfff.github.io/images/cover.jpg');"></div>
     
   
 
@@ -543,7 +708,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 
-<script src="http://Lmmfff.github.io/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
+<script src="https://lmmfff.github.io/js/script-yqzy9wdlzix4lbbwdnzvwx3egsne77earqmn73v9uno8aupuph8wfguccut.min.js"></script>
 
 
   

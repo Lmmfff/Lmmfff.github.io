@@ -2,18 +2,51 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>subcategory on </title>
-    <link>http://Lmmfff.github.io/categories/subcategory/</link>
+    <link>https://lmmfff.github.io/categories/subcategory/</link>
     <description>Recent content in subcategory on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Dec 2022 22:41:47 +0800</lastBuildDate><atom:link href="http://Lmmfff.github.io/categories/subcategory/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Dec 2022 22:41:47 +0800</lastBuildDate><atom:link href="https://lmmfff.github.io/categories/subcategory/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Firstpost</title>
-      <link>http://Lmmfff.github.io/post/firstpost/</link>
+      <title>学习搭建博客历程</title>
+      <link>https://lmmfff.github.io/post/firstpost/</link>
       <pubDate>Thu, 15 Dec 2022 22:41:47 +0800</pubDate>
       
-      <guid>http://Lmmfff.github.io/post/firstpost/</guid>
-      <description></description>
+      <guid>https://lmmfff.github.io/post/firstpost/</guid>
+      <description>&lt;h2 id=&#34;开始&#34;&gt;开始&lt;/h2&gt;
+&lt;p&gt;学习搭建博客一拖再拖，在学校总是有些乱七八糟的各种事情，不能心安理得的浪费时间去解决一些奇奇怪怪的问题，好吧，说到底还是自己太垃圾了。话不多说，进入正题。&lt;/p&gt;
+&lt;h2 id=&#34;1-关于hugo&#34;&gt;1 关于Hugo&lt;/h2&gt;
+&lt;h2 id=&#34;11准备工作下载hugo&#34;&gt;1.1准备工作，下载Hugo&lt;/h2&gt;
+&lt;p&gt;下载安装Hugo，用cmd输入hugo version检测是否安装成功
+成功安装后，建立一个空白文件夹，用来存放博客网站的文件例如D:/Hugowebsite&lt;/p&gt;
+&lt;h2 id=&#34;12生成静态网站&#34;&gt;1.2生成静态网站&lt;/h2&gt;
+&lt;p&gt;在D:/Hugowebsite文件夹里打开cmd（tips：直接在资源管理器路径栏里面输入cmd），&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hugo new site blog
+#blog是网站文件名
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;此时，blog文件夹里面已经包含多个网站的文件。&lt;/p&gt;
+&lt;h2 id=&#34;13下载主题&#34;&gt;1.3下载主题&lt;/h2&gt;
+&lt;p&gt;下载hugo主题,官网&lt;a href=&#34;http://themes.gohugo.io&#34;&gt;http://themes.gohugo.io&lt;/a&gt;
+选择一个喜欢的主题，进入网站目录&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;cd blog/themes
+#把主题文件夹下载到themes下
+git clone https://github.com/XXX/XXX.git XXX #网址为主题的github仓库网址，后面为下载到的文件夹名
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;然后，打开下载的文件夹里面的exampleSite，我的是D:\Hugo\Hugowebsite\blog\themes\hugo-tranquilpeak-theme\exampleSite&lt;/p&gt;
+&lt;p&gt;将里面的全部文件复制到外面的blog文件夹里，替代原来的同名文件（夹）。（此处，全部替换可能将主题中的一些多余的博客也加到了自己的博客中，没关系，后面可以删除）。此处复制也可用cmd代码操作&lt;/p&gt;
+&lt;p&gt;配置主题文件，可直接修改blog/config.toml文件中的内容，例如主页的布局，用户名，介绍等等。注意一下几个地方&lt;/p&gt;
+&lt;p&gt;1 修改主题名字，网站连接的github网址（后面托管要用）可用如下代码&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;hugo --theme=XXX --baseUrl=“https://XXX.github.io/&amp;quot; --buildDrafts
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;2 其他对主题中布局不满意或者需要删改增加的地方直接在config文件中改，主题的相关官网文件中有详细介绍代码的功能，注释中也有。&lt;/p&gt;
+&lt;h2 id=&#34;14新建博客&#34;&gt;1.4新建博客&lt;/h2&gt;
+&lt;pre&gt;&lt;code&gt;hugo new post/firstblog.md #此时工作目录为blog。新建的firstblog文件在content目录下
+#启动hugo server，生成静态网站，打开最后的网址，可看到此时主题已经生效
+hugo server -D
+&lt;/code&gt;&lt;/pre&gt;
+&lt;h2 id=&#34;2-github库&#34;&gt;2 github库&lt;/h2&gt;
+&lt;h2 id=&#34;3-hugo的静态网站托管到github&#34;&gt;3 Hugo的静态网站托管到github&lt;/h2&gt;
+&lt;h2 id=&#34;4-其他问题&#34;&gt;4 其他问题&lt;/h2&gt;</description>
     </item>
     
   </channel>
