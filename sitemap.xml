@@ -5,26 +5,23 @@
     <loc>https://lmmfff.github.io/</loc>
     <lastmod>2022-12-16T22:14:17+08:00</lastmod>
   </url><url>
+    <loc>https://lmmfff.github.io/categories/</loc>
+    <lastmod>2022-12-16T22:14:17+08:00</lastmod>
+  </url><url>
     <loc>https://lmmfff.github.io/post/</loc>
+    <lastmod>2022-12-16T22:14:17+08:00</lastmod>
+  </url><url>
+    <loc>https://lmmfff.github.io/tags/</loc>
     <lastmod>2022-12-16T22:14:17+08:00</lastmod>
   </url><url>
     <loc>https://lmmfff.github.io/post/second/</loc>
     <lastmod>2022-12-16T22:14:17+08:00</lastmod>
   </url><url>
-    <loc>https://lmmfff.github.io/categories/</loc>
-    <lastmod>2022-12-15T22:41:47+08:00</lastmod>
+    <loc>https://lmmfff.github.io/tags/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2022-12-16T22:14:17+08:00</lastmod>
   </url><url>
-    <loc>https://lmmfff.github.io/categories/category/</loc>
-    <lastmod>2022-12-15T22:41:47+08:00</lastmod>
-  </url><url>
-    <loc>https://lmmfff.github.io/categories/subcategory/</loc>
-    <lastmod>2022-12-15T22:41:47+08:00</lastmod>
-  </url><url>
-    <loc>https://lmmfff.github.io/tags/tag2/</loc>
-    <lastmod>2022-12-15T22:41:47+08:00</lastmod>
-  </url><url>
-    <loc>https://lmmfff.github.io/tags/</loc>
-    <lastmod>2022-12-15T22:41:47+08:00</lastmod>
+    <loc>https://lmmfff.github.io/categories/%E7%AC%94%E8%AE%B0/</loc>
+    <lastmod>2022-12-16T22:14:17+08:00</lastmod>
   </url><url>
     <loc>https://lmmfff.github.io/post/firstpost/</loc>
     <lastmod>2022-12-15T22:41:47+08:00</lastmod>
@@ -32,6 +29,15 @@
     <loc>https://lmmfff.github.io/tags/%E5%B7%A5%E5%85%B7%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2022-12-15T22:41:47+08:00</lastmod>
   </url><url>
+    <loc>https://lmmfff.github.io/categories/%E5%B7%A5%E5%85%B7%E5%AD%A6%E4%B9%A0/</loc>
+    <lastmod>2022-12-15T22:41:47+08:00</lastmod>
+  </url><url>
     <loc>https://lmmfff.github.io/archives/</loc>
+  </url><url>
+    <loc>https://lmmfff.github.io/post/book1/</loc>
+  </url><url>
+    <loc>https://lmmfff.github.io/tags/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
+  </url><url>
+    <loc>https://lmmfff.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/</loc>
   </url>
 </urlset>
