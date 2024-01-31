@@ -6,7 +6,16 @@
     <description>Recent content in 工具学习 on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Dec 2022 22:41:47 +0800</lastBuildDate><atom:link href="https://lmmfff.github.io/categories/%E5%B7%A5%E5%85%B7%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 Jan 2024 19:30:00 +0800</lastBuildDate><atom:link href="https://lmmfff.github.io/categories/%E5%B7%A5%E5%85%B7%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>连接远程Linux服务器并运行LLM</title>
+      <link>https://lmmfff.github.io/post/llm/</link>
+      <pubDate>Wed, 31 Jan 2024 19:30:00 +0800</pubDate>
+      
+      <guid>https://lmmfff.github.io/post/llm/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>学习搭建博客历程</title>
       <link>https://lmmfff.github.io/post/firstpost/</link>

@@ -6,7 +6,16 @@
     <description>Recent content in Posts on </description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jan 2024 19:46:00 +0800</lastBuildDate><atom:link href="https://lmmfff.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 31 Jan 2024 19:30:00 +0800</lastBuildDate><atom:link href="https://lmmfff.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>连接远程Linux服务器并运行LLM</title>
+      <link>https://lmmfff.github.io/post/llm/</link>
+      <pubDate>Wed, 31 Jan 2024 19:30:00 +0800</pubDate>
+      
+      <guid>https://lmmfff.github.io/post/llm/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>《半生缘》读后感</title>
       <link>https://lmmfff.github.io/post/book1/</link>
